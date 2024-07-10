@@ -81,7 +81,7 @@ app.post('/api/users/update-vehicles', async (req, res) => {
     user.selectedVehicles = selectedVehicles;
 
     await user.save();
-    res.status(200).json({ success: true, message: 'Selected vehicles updated successfully' });
+    res.status(200).json({ success: true, message: 'Selected vehicles updated successfuly' });
   } catch (error) {
     console.error(error.message);
     res.status(500).send('Server Error');
